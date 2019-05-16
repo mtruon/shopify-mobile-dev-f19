@@ -26,6 +26,6 @@ Due to the way I computed random insertions, there is a possibility that a set e
 I wanted to draw a bezier curve or explore other possible solutions instead of my current solution to highlighting a user's currently selected items. Within the implementation, I generated valid lines represented as a set of coordinates. This could have been used to draw a curve.
 
 ### 3. Results View
-I would've liked to implemented a table which displayed the available solutions with some slick UI animations to enhance the experience. Unfortunately, I did not get the flow layout object to correctly configure and removed it from my final submission. 
+I would've liked to implemented a table which displayed the available solutions with some slick UI animations to enhance the experience. Unfortunately, I did not get the flow layout object to correctly configure and removed it from my final submission. This is the reason for the big white (purple) space at the bottom of the application. 
 
 
