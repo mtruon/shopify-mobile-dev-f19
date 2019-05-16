@@ -10,7 +10,7 @@ This is my submission for Shopify's mobile developer internship challenge for th
 </p>
 
 ## The Application
-This is an iOS application which randomly inserts a set of words into a matrix, afterwards, populating the available entries with random characters; a word serach puzzle. 
+This is an iOS application which randomly inserts a set of words into a matrix, afterwards, populating the available entries with random characters; a word serach puzzle. The puzzle supports 8 directions for insertion.
 
 ## Additional Features
 1. Random Word Insertion
