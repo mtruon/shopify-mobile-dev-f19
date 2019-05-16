@@ -6,9 +6,7 @@ This is my submission for Shopify's mobile developer internship challenge for th
 
 <p align="center">
   <img src="new.png" width="35%"> <img src="collection-detail.png" width="35%">
-  No Words
   <img src="completed.png" width="35%"> <img src="collection-detail-se.png" width="35%">
-  All Words
 </p>
 
 ## Features
