@@ -10,6 +10,7 @@ This is my submission for Shopify's mobile developer internship challenge for th
   <img src="completed.png" width="35%"> <img src="collection-detail-se.png" width="35%">
   All Words
 </p>
+
 ## Features
 ### 1. Random Word Insertion
 ### 2. Swiping Gestures (Pan)
