@@ -63,17 +63,25 @@
 			isa = PBXGroup;
 			children = (
 				4C5F7C72227A6AA30085F9FC /* AppDelegate.swift */,
-				4C5F7C84227A70400085F9FC /* Word.swift */,
-				4C5F7C98227B2D970085F9FC /* WordSearchCollectionViewCell.swift */,
 				4C5F7C76227A6AA30085F9FC /* Main.storyboard */,
 				4C5F7C9A227B66390085F9FC /* ViewController.swift */,
-				4C5F7C90227A8CC60085F9FC /* WordSearchViewController.swift */,
-				4C5F7C9C227CE2290085F9FC /* WordGrid.swift */,
+				4C5F7CA7228CFBF90085F9FC /* WordSearch */,
 				4C5F7C79227A6AA50085F9FC /* Assets.xcassets */,
 				4C5F7C7B227A6AA50085F9FC /* LaunchScreen.storyboard */,
 				4C5F7C7E227A6AA50085F9FC /* Info.plist */,
 			);
 			path = "Shopify Challenge F19";
+			sourceTree = "<group>";
+		};
+		4C5F7CA7228CFBF90085F9FC /* WordSearch */ = {
+			isa = PBXGroup;
+			children = (
+				4C5F7C84227A70400085F9FC /* Word.swift */,
+				4C5F7C98227B2D970085F9FC /* WordSearchCollectionViewCell.swift */,
+				4C5F7C90227A8CC60085F9FC /* WordSearchViewController.swift */,
+				4C5F7C9C227CE2290085F9FC /* WordGrid.swift */,
+			);
+			path = WordSearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

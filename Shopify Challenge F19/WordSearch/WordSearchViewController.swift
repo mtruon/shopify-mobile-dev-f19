@@ -70,10 +70,11 @@ final class WordSearchViewController: UICollectionViewController {
                 selectedCellsCoord = getLine(from: beginCellCoord, to: endCellCoord)
                 if wordGrid.checkWord(Word(selectedWord), at: selectedCellsCoord) {
                     updateGridColor(at: selectedCellsCoord, to: shopifyGreen )
-                    print("HERE")
                     delegate?.getWordsList(wordGrid.words)
                 }
             }
+        } else {
+            updateGridColor(at: selectedCellsCoord, to: .white)
         }
     }
     
@@ -83,7 +84,6 @@ final class WordSearchViewController: UICollectionViewController {
             let row = coord.0
             let col = coord.1
             if let cell = collectionView.cellForItem(at: IndexPath(item: coord.1, section: coord.0)) {
-                print(wordGrid.grid[row][col].status)
                 if color != shopifyGreen {
                     // Clearing the colour
                     if !wordGrid.grid[row][col].status {
@@ -96,8 +96,7 @@ final class WordSearchViewController: UICollectionViewController {
         }
     }
     
-    ///
-    // (row, col) or (section,item)
+    /// Returns a collection of coordinates which make a line in the word grid
     func getLine(from begin: (Int, Int), to end: (Int, Int)) -> [(Int,Int)] {
         var line = [(Int,Int)]()
         
@@ -147,22 +146,6 @@ final class WordSearchViewController: UICollectionViewController {
         
         return line
     }
-    
-    // MARK: UICollectionViewDelegate
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-//        print("Hightlight")
-//        beginCellCoord = (indexPath.section,indexPath.item)
-//        endCellCoord = beginCellCoord
-//        getLine(from: beginCellCoord, to: endCellCoord)
-        return true
-    }
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }*/
 }
 
 // MARK: - UICollectionViewDataSource

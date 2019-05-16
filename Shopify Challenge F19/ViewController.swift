@@ -9,15 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var foundLabel: UILabel!
+    
+    var words = [Word]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-
-    
-
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "wordSearch") {
@@ -37,6 +37,6 @@ extension ViewController: WordSearchCollectionViewControllerDelegate {
             }
         }
         foundLabel.text = "\(found)/\(words.count)"
-        
+        self.words = words
     }
 }

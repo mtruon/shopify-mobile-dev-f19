@@ -39,13 +39,13 @@ class WordGrid {
         }
         
         // Populates the grid with noise characters
-//        for row in 0..<size {
-//            for col in 0..<size {
-//                if (self.grid[row][col].letter == "_") {
-//                    self.grid[row][col].letter = generateRandomCharacter()
-//                }
-//            }
-//        }
+        for row in 0..<size {
+            for col in 0..<size {
+                if (self.grid[row][col].letter == "_") {
+                    self.grid[row][col].letter = generateRandomCharacter()
+                }
+            }
+        }
     }
     
     /// Returns true if the specified word exists in the word grid's list - ignoring direction.
